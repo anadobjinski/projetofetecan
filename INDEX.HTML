@@ -1,1 +1,151 @@
 
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cidade Inteligente - Cadastro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f1c2e;
+      color: #e0f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00bcd4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #0f1c2e;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #26c6da;
+      border-bottom: 1px solid #26c6da;
+      padding-bottom: 5px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      background-color: #263238;
+      color: #fff;
+    }
+
+    button {
+      background-color: #00acc1;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #008b9a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #102027;
+      color: #b0bec5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Cidade Inteligente</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Dados da Cidade</h2>
+      <label for="nome">Nome da Cidade</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="populacao">População Estimada</label>
+      <input type="number" id="populacao" name="populacao">
+
+      <label for="regiao">Região Administrativa</label>
+      <select id="regiao" name="regiao">
+        <option>Centro</option>
+        <option>Leste</option>
+        <option>Oeste</option>
+        <option>Norte</option>
+        <option>Sul</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Consumo de Energia e Iluminação Pública</h2>
+      <label for="luz">Quantidade de Energia Elétrica Consumida (kWh/mês)</label>
+      <input type="number" id="luz" name="luz">
+
+      <label for="publica">Número de Postes de Iluminação Pública</label>
+      <input type="number" id="publica" name="publica">
+
+      <label for="lampadas">Tipo de Lâmpadas Utilizadas</label>
+      <select id="lampadas" name="lampadas">
+        <option>LED Inteligente</option>
+        <option>Sódio</option>
+        <option>Halógena</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Instruções para Uso da Inteligência Urbana</h2>
+      <label for="instrucoes">Como utilizar o sistema de inteligência da cidade:</label>
+      <textarea id="instrucoes" rows="6" placeholder="Descreva como os cidadãos podem acessar os serviços inteligentes, aplicativos, alertas urbanos, e mais."></textarea>
+    </section>
+
+    <section>
+      <h2>Serviços e Funcionalidades Adicionais</h2>
+      <label for="iot">Quantos sensores IoT estão ativos?</label>
+      <input type="number" id="iot" name="iot">
+
+      <label for="monitoramento">Monitoramento em tempo real?</label>
+      <select id="monitoramento" name="monitoramento">
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
+
+      <label for="seguranca">Sistema de segurança com reconhecimento facial?</label>
+      <select id="seguranca" name="seguranca">
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
+    </section>
+
+    <button type="submit">Enviar Cadastro</button>
+  </main>
+
+  <footer>
+    &copy; 2025 Cidade Inteligente | Desenvolvido por Iniciativas Sustentáveis
+  </footer>
+</body>
+</html>
